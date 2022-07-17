@@ -1,7 +1,14 @@
 import { createTransport } from "nodemailer";
 import { config } from 'dotenv';
 config({ path: './config/config.env' });
-
+/**
+ * 
+ * @property {string} email Address 
+ * @property {string} email subject 
+ * @property {string}  MailBody
+ * @property {string}  Optional
+ * @returns 
+ */
 export default async function SendMail({ to, subject, text, html }) {
     const transporter = createTransport({
         service: "Gmail",

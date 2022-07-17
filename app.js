@@ -4,7 +4,7 @@ config({ path: './config/config.env' });
 import cookieParser from 'cookie-parser';
 // import session from 'express-session';
 import cors from 'cors';
-// import mongan from 'mongan';
+// import mongan from 'morgan';
 import { createServer } from 'http';
 import DBConnect from './config/db';
 import routers from './routers';
@@ -34,7 +34,6 @@ app.use('*', (req, res, _n) => {
 if (process.env.NODE_ENV === 'development') app.use(mongan);
 //Database Connection
 if (process.env.MONGO_URI) DBConnect();
-
 const PORT = process.env.PORT || 1111;
 const server = httpServer.listen(PORT, _ => {
     console.log(`Alhamdu lillah server is listening on port ${PORT}`);
