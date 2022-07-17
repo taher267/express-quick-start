@@ -1,3 +1,5 @@
 node_modules
 test
-configs
+config/config.env
+yarn.log
+package.json
