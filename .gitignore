@@ -1,5 +1,4 @@
 node_modules
-test
 config/config.env
-yarn.log
+yarn.lock
 package.json
