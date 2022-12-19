@@ -1,0 +1,10 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node -r esm server.js",
+    "dev": "set NODE_ENV=development&nodemon -r esm app.js"
+  }
+}
